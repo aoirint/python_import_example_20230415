@@ -5,6 +5,9 @@ Pythonのimport挙動をテストするためのリポジトリ。
 ```shell
 pyenv local 3.8.10
 
+python3 -m venv venv
+source venv/bin/activate
+
 pip3 install -r requirements.txt
 
 pytest .
