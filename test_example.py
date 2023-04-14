@@ -6,6 +6,11 @@ def test_utility_fuga_execute_fuga():
     import example.utility as utility
     utility.fuga.execute_fuga()
 
+def test_utility_fuga_execute_fuga_after_import_fuga():
+    import example.utility as utility
+    import example.utility.fuga
+    utility.fuga.execute_fuga()
+
 def test_hoge_execute_hoge():
     import example.utility.hoge as hoge
     hoge.execute_hoge()
